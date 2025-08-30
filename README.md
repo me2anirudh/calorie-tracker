@@ -1,6 +1,8 @@
 # Calorie Tracker App
 
-A **Flask-based web application** to track daily calorie intake. Users can log in, register, and add their meals. Admins can manage food items and add new ones along with their calorie information.  
+A Flask-based web application** to track daily calorie intake. Users can log in, register, and add their meals. Admins can manage food items and add new ones along with their calorie information.  
+
+![image_alt](https://github.com/me2anirudh/calorie-tracker/blob/main/Screenshot%20(2).png?raw=true
 
 ---
 
@@ -34,4 +36,4 @@ A **Flask-based web application** to track daily calorie intake. Users can log i
 git clone https://github.com/me2anirudh/calorie-tracker.git
 cd calorie-tracker
 
-![image_alt](https://github.com/me2anirudh/calorie-tracker/blob/main/Screenshot%20(2).png?raw=true)
+
