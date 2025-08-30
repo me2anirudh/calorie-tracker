@@ -31,6 +31,6 @@ A **Flask-based web application** to track daily calorie intake. Users can log i
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/YOUR-USERNAME/calorie-tracker.git
+git clone https://github.com/me2anirudh/calorie-tracker.git
 cd calorie-tracker
 
