@@ -1,2 +1,36 @@
-# calorie-tracker
-A web-based Calorie Tracker built with Flask, allowing users to log meals and track calorie intake. Includes an admin panel to add new food items with their calories, making it easy to expand the food database for all users. Features user authentication, a dynamic meal logging system, and an appealing, responsive interface.
+# Calorie Tracker App
+
+A **Flask-based web application** to track daily calorie intake. Users can log in, register, and add their meals. Admins can manage food items and add new ones along with their calorie information.  
+
+---
+
+## Features
+
+### User Features
+- Register and log in securely.
+- Add meals by selecting from a dropdown of food items.
+- Track daily calorie intake.
+- User-friendly dashboard to see all meals added.
+
+### Admin Features
+- Log in as an admin.
+- Add new food items with calories per 100 grams.
+- Manage the list of available foods for all users.
+
+---
+
+## Tech Stack
+- **Backend:** Python, Flask
+- **Frontend:** HTML, CSS, Bootstrap
+- **Database:** SQLite / MySQL (configurable)
+- **Authentication:** Flask-Login, Bcrypt for password hashing
+
+---
+
+## Installation
+
+1. **Clone the repository:**
+```bash
+git clone https://github.com/YOUR-USERNAME/calorie-tracker.git
+cd calorie-tracker
+
