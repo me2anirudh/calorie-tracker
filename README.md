@@ -4,6 +4,9 @@ A Flask-based web application** to track daily calorie intake. Users can log in,
 
 ![image_alt](https://github.com/me2anirudh/calorie-tracker/blob/main/Screenshot%20(2).png?raw=true)
 
+![image_alt](https://github.com/me2anirudh/calorie-tracker/blob/8acbb36b5ca4e470754311d166d6f9cec14e97e3/Screenshot%20(5).png)
+
+
 ---
 
 ## Features
