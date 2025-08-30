@@ -1,0 +1,226 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background: #333;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.container {
+    padding: 20px;
+}
+form input, form button {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.flash {
+    padding: 10px;
+    margin: 10px 0;
+}
+.flash.success { background: #c8e6c9; }
+.flash.danger { background: #ffcdd2; } */
+
+
+
+/* ---------- General Body & Font ---------- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- Container ---------- */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ---------- Headings ---------- */
+h1, h2, h3 {
+    text-align: center;
+    color: #ff5722;
+    margin-bottom: 20px;
+}
+
+/* ---------- Links ---------- */
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ff9800;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    margin: 5px;
+    color: white;
+}
+
+.btn-primary { background-color: #ff5722; }
+.btn-primary:hover { background-color: #e64a19; }
+
+.btn-success { background-color: #4caf50; }
+.btn-success:hover { background-color: #388e3c; }
+
+.btn-danger { background-color: #f44336; }
+.btn-danger:hover { background-color: #d32f2f; }
+
+/* ---------- Forms ---------- */
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+/* ---------- Navbar ---------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff5722;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.navbar a {
+    color: white;
+    margin-left: 15px;
+}
+
+.navbar a:hover {
+    color: #ffd54f;
+}
+
+/* ---------- Cards for Meals ---------- */
+.card {
+    background-color: #fff3e0;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ---------- Tables ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #ff9800;
+    color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+/* ---------- Alerts / Messages ---------- */
+.alert {
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.alert-success { background-color: #4caf50; }
+.alert-danger { background-color: #f44336; }
+.alert-warning { background-color: #ff9800; }
+
+/* ---------- Footer ---------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: #ff5722;
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Buttons styling */
+button, .btn {
+    background-color: #4CAF50; /* green */
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Dropdown styling */
+select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+select:hover {
+    border-color: #4CAF50;
+    background-color: #e6f2e6;
+}
+
+/* Optional: add some spacing for buttons */
+button, select {
+    margin: 10px 0;
+}
+

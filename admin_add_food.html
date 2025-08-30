@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Admin: Add New Food</h2>
+
+<form method="POST">
+    <input type="text" name="name" placeholder="Food Name" required>
+    <input type="number" name="calories" placeholder="Calories per 100g" required>
+    <button type="submit">Add Food</button>
+</form>
+
+
+<h3>Existing Foods:</h3>
+<ul>
+    {% for food in foods %}
+        <li>{{ food.name }} - {{ food.calories_per_100g }} cal/100g</li>
+    {% endfor %}
+</ul>
+{% endblock %}

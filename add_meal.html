@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="form-container">
+    <h2>Add a Meal</h2>
+    <form method="POST">
+        <label for="food">Select Food:</label>
+        <select name="food_id" required>
+            {% for food in foods %}
+                <option value="{{ food.id }}">{{ food.name }} ({{ food.calories_per_100g }} kcal/100g)</option>
+            {% endfor %}
+        </select><br><br>
+
+        <label for="grams">Enter Grams:</label>
+        <input type="number" name="grams" required><br><br>
+
+        <button type="submit" class="btn">Add Meal</button>
+    </form>
+</div>
+{% endblock %}
+

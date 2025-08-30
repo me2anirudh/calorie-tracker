@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Welcome, {{ current_user.username }} 🎉</h1>
+
+<div class="card">
+    <h2>Today's Meals</h2>
+    {% if meals %}
+        <table>
+            <tr>
+                <th>Food</th>
+                <th>Grams</th>
+                <th>Calories</th>
+                <th>Time</th>
+            </tr>
+            {% for meal in meals %}
+            <tr>
+                <td>{{ meal.food.name }}</td>
+                <td>{{ meal.grams }}</td>
+                <td>{{ meal.calories }}</td>
+                <td>{{ meal.timestamp.strftime('%H:%M %p') if meal.timestamp else 'N/A' }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No meals added yet. <a href="{{ url_for('add_meal') }}">Add one now</a>!</p>
+    {% endif %}
+</div>
+
+<div class="card">
+    <h2>Total Calories Today: {{ total_calories }} kcal 🔥</h2>
+</div>
+{% endblock %}

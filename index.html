@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="hero">
+    <h1>Welcome to Calorie Tracker 🥗</h1>
+    <p>Track your meals and monitor your daily calorie intake.</p>
+    {% if not current_user.is_authenticated %}
+        <a href="{{ url_for('login') }}" class="btn">Login</a>
+        <a href="{{ url_for('register') }}" class="btn">Register</a>
+    {% endif %}
+</div>
+{% endblock %}
+

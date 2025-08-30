@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Admin Dashboard</h2>
+<a href="{{ url_for('admin_add_food') }}">Add New Food Item</a>
+
+<h3>Existing Food Items:</h3>
+<ul>
+  {% for food in foods %}
+    <li>{{ food.name }} - {{ food.calories_per_100g }} cal per 100g</li>
+  {% endfor %}
+</ul>
+{% endblock %}
